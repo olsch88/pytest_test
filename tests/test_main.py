@@ -1,7 +1,4 @@
-from src.main import read_file, use_import
-
-# def test_simple():
-#     assert None == main()
+from src.mypkg.main import read_file, use_import
 
 
 def test_read_file():

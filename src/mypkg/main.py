@@ -1,8 +1,4 @@
 # this works for the script but not with pytest
-from lib import imported_function
-
-
-# this works fot pytest, but not with the script
 from .lib import imported_function
 
 
@@ -16,4 +12,4 @@ def read_file(filename: str) -> str:
 
 
 if __name__ == "__main__":
-    print(read_file("real_data.txt"))
+    print(read_file("./src./mypkg/real_data.txt"))
