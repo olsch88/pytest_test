@@ -1,7 +1,8 @@
-try:  # normal version
-    from lib import imported_function
-except (ImportError, ModuleNotFoundError):  # for pytest
-    from .lib import imported_function
+# this works for the script but not with pytest
+from lib import imported_function
+
+# this works fot pytest, but not with the script
+from .lib import imported_function
 
 
 def use_import():
