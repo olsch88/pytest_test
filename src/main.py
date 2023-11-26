@@ -1,6 +1,7 @@
 # this works for the script but not with pytest
 from lib import imported_function
 
+
 # this works fot pytest, but not with the script
 from .lib import imported_function
 
